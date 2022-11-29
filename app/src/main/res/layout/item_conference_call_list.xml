@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_conference_calllist_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/selector">
+
+    <RelativeLayout
+        android:id="@+id/item_conference_call_list_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/medium_margin"
+        android:paddingEnd="@dimen/activity_margin"
+        android:paddingBottom="@dimen/medium_margin">
+
+        <ImageView
+            android:id="@+id/item_call_image"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:padding="@dimen/small_margin"
+            android:src="@drawable/ic_person_vector" />
+
+        <TextView
+            android:id="@+id/item_call_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_call_image"
+            android:textColor="@color/md_grey_black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/bigger_text_size"
+            tools:text="John Doe" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/imageRemoveCall"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_call_decline"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/item_call_name"
+            android:alpha="1.0"
+            android:gravity="end" />
+
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>

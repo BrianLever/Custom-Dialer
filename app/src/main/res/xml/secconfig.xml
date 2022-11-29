@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<base-config cleartextTrafficPermitted="true" />
+<domain-config>
+    <domain includeSubdomains="true">192.168.0.142</domain>
+    <domain includeSubdomains="true">jitsimeet.onecxn.info</domain>
+  <!--  <trust-anchors>
+        <certificates src="@app/src/main/rawcertres/chain.pem"/>
+
+    </trust-anchors> -->
+</domain-config>
+</network-security-config>

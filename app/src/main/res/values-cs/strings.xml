@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">inYTe</string>
+    <string name="app_launcher_name">inYte</string>
+    <string name="default_phone_app_prompt">Please make this app the default Phone app</string>
+
+    <!-- Contacts -->
+    <string name="could_not_access_contacts">Nejde získat přístup k vašim kontaktům</string>
+
+    <!-- Recents -->
+    <string name="no_previous_calls">Nebyly nalezeny žádné předchozí hovory</string>
+    <string name="could_not_access_the_call_history">Nelze získat přístup k historii hovorů</string>
+    <string name="request_access">Požádat o přístup</string>
+    <string name="remove_confirmation">Opravdu chcete odebrat vybrané položky z historie hovorů?</string>
+    <string name="clear_history_confirmation">Opravdu chcete z historie hovorů odebrat vše?</string>
+    <string name="send_sms">Poslat SMS</string>
+    <string name="show_grouped_calls">Zobrazit seskupené hovory</string>
+    <string name="clear_call_history">Vymazat historii hovorů</string>
+
+    <!-- Dialpad -->
+    <string name="dialpad">Číselník</string>
+
+    <!-- Dialer -->
+    <string name="dialer">Telefon</string>
+    <string name="accept">Přijmout</string>
+    <string name="decline">Odmítnout</string>
+    <string name="unknown_caller">Neznámý volající</string>
+    <string name="is_calling">Volání…</string>
+    <string name="dialing">Vytáčení…</string>
+    <string name="call_ended">Hovor ukončen</string>
+    <string name="call_ending">Zavěsit</string>
+    <string name="ongoing_call">Odchozí hovor</string>
+    <string name="select_sim">Vyberte SIM pro tento hovor</string>
+    <string name="always_use_this_sim">Pro toto číslo vždy použijte tuto SIM kartu</string>
+    <string name="unset_default_sim">Zrušit nastavení výchozí SIM karty</string>
+
+    <!-- Speed dial -->
+    <string name="speed_dial">Rychlé vytáčení</string>
+    <string name="manage_speed_dial">Spravujte rychlou volbu</string>
+    <string name="speed_dial_label">Kliknutím na číslo mu přiřadíte kontakt. Potom můžete rychle zavolat danému kontaktu dlouhým stisknutím daného čísla na číselníku.</string>
+
+    <!-- Settings -->
+    <string name="group_subsequent_calls">Seskupte další hovory se stejným číslem v protokolu hovorů</string>
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <string name="app_title">Simple Dialer - Spravujte své telefonní hovory snadno</string>
+    <!-- Short description has to have less than 80 chars -->
+    <string name="app_short_description">Šikovný správce telefonních hovorů s telefonním seznamem, blokováním čísel a podporou více SIM karet</string>
+    <string name="app_long_description">
+        Lehká aplikace pro vyřizování vašich hovorů, ať jste kdekoli. Dodává se s praktickým protokolem hovorů pro snadné zahájení hovoru.
+
+        K dispozici je také rychlá číselná klávesnice s inteligentními návrhy kontaktů. Podporuje také písmena.
+
+        Telefonní čísla můžete snadno zablokovat, abyste předešli nechtěným příchozím hovorům.
+
+        Díky podporované rychlé volbě je volání vašich oblíbených kontaktů pomocí tohoto skutečného telefonu hračkou.
+
+        Abychom vám mohli rychle spravovat hovory, podporuje aplikace Telefon také oblíbené kontakty a vytváření zkratek všech kontaktů na domovské obrazovce.
+
+        Ve výchozím nastavení je dodáván s materiálovým designem a tmavým motivem a poskytuje skvělé uživatelské prostředí pro snadné použití. Nedostatek přístupu k internetu vám poskytuje více soukromí, zabezpečení a stability než jiné aplikace.
+
+        Neobsahuje žádné reklamy ani zbytečná oprávnění. Je plně opensource a poskytuje přizpůsobitelné barvy.
+
+        <b>Check out the full suite of Simple Tools here:</b>
+        https://www.simplemobiletools.com
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

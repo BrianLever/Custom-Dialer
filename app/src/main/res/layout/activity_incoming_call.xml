@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_white"
+    android:id="@+id/incomingIPCallHolder"
+    tools:context=".Activities.incomingCallActivity">
+
+
+    <ImageView
+        android:id="@+id/caller_avatar"
+        android:layout_width="@dimen/incoming_call_avatar_size"
+        android:layout_height="@dimen/incoming_call_avatar_size"
+        android:contentDescription="@string/accept"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        tools:src="@drawable/ic_call_accept" />
+
+    <TextView
+        android:id="@+id/inytevideolabel"
+        android:layout_width="289dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="@color/md_grey_black_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caller_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        android:text="@string/inyte_video_call" />
+
+
+    <TextView
+        android:id="@+id/textIncomingInvite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:text="@string/incoming_call"
+        android:textColor="@color/md_grey_black_dark"
+        android:textSize="28sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inytevideolabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reconnecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:includeFontPadding="false"
+        android:text="Re-connecting"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/firstDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="."
+        android:visibility="gone"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        app:layout_constraintStart_toEndOf="@id/reconnecting"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/secondDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="."
+        android:visibility="gone"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        app:layout_constraintStart_toEndOf="@id/firstDot"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/thirdDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="."
+        android:visibility="gone"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        app:layout_constraintStart_toEndOf="@id/secondDot"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/incomingCallHolder"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-4dp">
+        <LinearLayout
+            android:id="@+id/incoming_arrow_holder_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/declineCall"
+            app:layout_constraintStart_toStartOf="@+id/declineCall"
+            app:layout_constraintEnd_toEndOf="@+id/declineCall"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/imageViewArrow3_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_expand_less_36" />
+
+            <ImageView
+                android:id="@+id/imageViewArrow2_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_expand_less_36" />
+
+            <ImageView
+                android:id="@+id/imageViewArrow1_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_expand_less_36" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/declineCall"
+            android:layout_width="@dimen/incoming_call_button_size"
+            android:layout_height="@dimen/incoming_call_button_size"
+            android:contentDescription="@string/decline"
+            android:src="@drawable/ic_call_decline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <com.simplemobiletools.commons.views.MyTextView
+            android:id="@+id/call_decline_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="@string/decline"
+            android:textSize="@dimen/bigger_text_size"
+            android:textColor="@color/md_grey_black_dark"
+            app:layout_constraintEnd_toEndOf="@+id/declineCall"
+            app:layout_constraintStart_toStartOf="@+id/declineCall"
+            app:layout_constraintTop_toBottomOf="@+id/declineCall" />
+        <LinearLayout
+            android:id="@+id/incoming_ip_arrow_holder_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/answerCall"
+            app:layout_constraintStart_toStartOf="@+id/answerCall"
+            app:layout_constraintEnd_toEndOf="@+id/answerCall"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/imageViewArrow3_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_expand_less_36" />
+
+            <ImageView
+                android:id="@+id/imageViewArrow2_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_expand_less_36" />
+
+            <ImageView
+                android:id="@+id/imageViewArrow1_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_expand_less_36" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/answerCall"
+            android:layout_width="@dimen/incoming_call_button_size"
+            android:layout_height="@dimen/incoming_call_button_size"
+            android:contentDescription="@string/accept"
+            android:src="@drawable/ic_call_accept"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <com.simplemobiletools.commons.views.MyTextView
+            android:id="@+id/call_accept_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="@string/accept"
+            android:textSize="@dimen/bigger_text_size"
+            android:textColor="@color/md_grey_black_dark"
+            app:layout_constraintEnd_toEndOf="@+id/answerCall"
+            app:layout_constraintStart_toStartOf="@+id/answerCall"
+            app:layout_constraintTop_toBottomOf="@+id/answerCall" />
+
+
+
+        <ImageView
+            android:id="@+id/cancelCall"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/cancel_call"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+rootProject.name='Simple-Dialer'
+include ':app'
+include ':samples'
+include ':commons'

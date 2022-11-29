@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_tabs_holder"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:elevation="6dp"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="2dp"
+        app:tabMinWidth="150dp"
+        app:tabSelectedTextColor="@android:color/white" />
+
+    <com.simplemobiletools.commons.views.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom_bar"
+        android:layout_below="@+id/main_tabs_holder" />
+    <RelativeLayout
+        android:id="@+id/main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/md_blue"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/main_dialpad_button"
+            android:layout_width="57dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:elevation="@dimen/medium_margin"
+            android:src="@drawable/shortcut_dialpad" />
+           />
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/main_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layoutDirection="rtl"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/main_dialpad_button"
+            app:closeIcon="@drawable/baseline_close_24"
+            android:theme="@style/SearchViewTheme"
+            android:focusable="true"
+            app:searchIcon="@drawable/ic_search_vector"
+            android:queryHint="@string/search"
+            android:background="@drawable/ellipse_background"
+            android:iconifiedByDefault="false"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

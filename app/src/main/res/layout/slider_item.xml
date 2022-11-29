@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idRLSlider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/idIVSlider"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/p2p" />
+    <TextView
+        android:id="@+id/idTVSliderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVSlider"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/p2p_video_call"
+        android:textAlignment="center"
+        android:textColor="@color/md_blue"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/idTVSliderDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVSliderTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/slider_one_substring"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/_20sdp" />
+
+</RelativeLayout>

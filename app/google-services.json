@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107870177908",
+    "project_id": "onecxn-62a5c",
+    "storage_bucket": "onecxn-62a5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107870177908:android:df98189b96b9ce549cdf21",
+        "android_client_info": {
+          "package_name": "com.simplemobiletools.dialer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107870177908-qcr47q4hadnosu7cjqfse8bv4v30drk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simplemobiletools.dialer",
+            "certificate_hash": "a20c5dc4db57aeeb8fc9f8180bf57f1d528a9a2e"
+          }
+        },
+        {
+          "client_id": "107870177908-r2unp48crclgq5cqrmn0rlmtbie88p47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simplemobiletools.dialer",
+            "certificate_hash": "f4c46ca9c872bf13c5a08e06ee6545c74517e064"
+          }
+        },
+        {
+          "client_id": "107870177908-53cfqha4ii6rf4bnc60hb9vq0as94heh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZPd9xgks_Y22z6uhxbGd6ORu-bQAn7PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107870177908-53cfqha4ii6rf4bnc60hb9vq0as94heh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

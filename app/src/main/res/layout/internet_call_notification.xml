@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/internet_notification_caller_name"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/bigger_text_size"
+        android:textStyle="bold"
+        tools:text="Caller name" />
+
+    <TextView
+        android:id="@+id/internet_notification_call_status"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/internet_notification_caller_name"
+        android:alpha="0.8"
+        tools:text="123 456 789" />
+
+    <ImageView
+        android:id="@+id/internet_notification_thumbnail"
+        android:layout_width="@dimen/list_avatar_size"
+        android:layout_height="@dimen/list_avatar_size"
+        android:src="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/notification_actions_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/internet_notification_call_status"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/call_back_button"
+            android:text="Call back"
+            android:textColor="@color/md_grey_black_dark"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="@dimen/_120sdp"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!--  <style name="AppTheme" parent="AppTheme.Base" /> -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+    </style>
+    <style name = "signUpTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+    </style>
+
+
+    <style name ="OTP" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/OTPcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/OTPcolorPrimaryDark</item>
+        <item name="colorAccent">@color/OTPcolorAccent</item>
+    </style>
+
+    <style name="instantmessaging" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetAPI="l">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialpadNumberStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/dialpad_text_size</item>
+    </style>
+
+    <style name="DialpadLetterStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:alpha">0.8</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="SearchViewTheme" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:editTextColor">@android:color/black</item>
+    </style>
+    <style name="CheckboxStyle" parent="AppTheme">
+        <item name="colorAccent">@color/md_blue</item>  // for checked
+        <item name="android:textColorSecondary">@color/md_grey</item>  // for unchecked
+    </style>
+
+    <style name="SettingsSectionLabelStyle">
+        <item name="android:layout_marginTop">@dimen/activity_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="SettingsHolderTextViewStyle">
+        <item name="android:paddingStart">@dimen/activity_margin</item>
+        <item name="android:paddingTop">@dimen/activity_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_margin</item>
+    </style>
+
+    <style name="SettingsHolderTextViewOneLinerStyle" parent="@style/SettingsHolderTextViewStyle">
+        <item name="android:paddingTop">@dimen/bigger_margin</item>
+        <item name="android:paddingBottom">@dimen/bigger_margin</item>
+    </style>
+
+    <style name="SettingsTextLabelStyle">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="SettingsTextValueStyle">
+        <item name="android:alpha">0.6</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="SettingsCheckboxStyle">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:paddingStart">@dimen/medium_margin</item>
+    </style>
+
+    <style name="SettingsHolderCheckboxStyle">
+        <item name="android:paddingStart">@dimen/activity_margin</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+
+</resources>

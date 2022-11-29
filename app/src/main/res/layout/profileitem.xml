@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/profileitem"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/profileitemrelativeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/medium_margin"
+        android:paddingEnd="@dimen/activity_margin"
+        android:paddingBottom="@dimen/medium_margin">
+
+        <ImageView
+            android:id="@+id/profileitemlogoholder"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:padding="@dimen/small_margin" />
+
+        <EditText
+        android:id="@+id/profileitemtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/profileitemlogoholder"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/bigger_text_size"
+        android:imeOptions="actionDone"
+         />
+
+    <!--    <ImageView
+            android:id="@+id/editfield"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/profileitemlogoholder"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="4dp"/> -->
+    </RelativeLayout>
+</FrameLayout>

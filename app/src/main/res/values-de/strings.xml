@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Schlichtes Telefon</string>
+    <string name="app_launcher_name">Telefon</string>
+    <string name="default_phone_app_prompt">Please make this app the default Phone app</string>
+
+    <!-- Contacts -->
+    <string name="could_not_access_contacts">kein Zugriff auf Kontakte</string>
+
+    <!-- Recents -->
+    <string name="no_previous_calls">Deine Anrufliste ist leer.</string>
+    <string name="could_not_access_the_call_history">kein Zugriff auf Anrufliste</string>
+    <string name="request_access">Zugriff anfordern</string>
+    <string name="remove_confirmation">Ausgewählte Anrufe definitiv aus der Anrufliste löschen?</string>
+    <string name="clear_history_confirmation">Bist du sicher, dass du alles aus der Anrufliste löschen möchtest?</string>
+    <string name="send_sms">Sende SMS</string>
+    <string name="show_grouped_calls">Zeige gruppierte Anrufe</string>
+    <string name="clear_call_history">Anrufliste löschen</string>
+
+    <!-- Dialpad -->
+    <string name="dialpad">Wählpad</string>
+
+    <!-- Dialer -->
+    <string name="dialer">Telefon</string>
+    <string name="accept">akzeptieren</string>
+    <string name="decline">ablehnen</string>
+    <string name="unknown_caller">Unbekannter Anruf</string>
+    <string name="is_calling">ruft an…</string>
+    <string name="dialing">rufe an…</string>
+    <string name="call_ended">Anruf beendet</string>
+    <string name="call_ending">Anruf beenden</string>
+    <string name="ongoing_call">Aktueller Anruf</string>
+    <string name="select_sim">wähle die SIM Karte für diesen Anruf aus</string>
+    <string name="always_use_this_sim">benutze immer diese SIM Karte</string>
+    <string name="unset_default_sim">Standard SIM abstellen</string>
+
+    <!-- Speed dial -->
+    <string name="speed_dial">Kurzwahl</string>
+    <string name="manage_speed_dial">Kurzwahlnummern verwalten</string>
+    <string name="speed_dial_label">Klicke auf eine Zahl um einen Kontakt zuzuweisen. Danach kannst du den Kontakt schnell durch langes drücken der entsprechenden Zahl anrufen</string>
+
+    <!-- Settings -->
+    <string name="group_subsequent_calls">In der Anrufliste aufeinanderfolgende Anrufe mit derselben Nummer gruppieren</string>
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <string name="app_title">Schlichtes Telefon</string>
+    <!-- Short description has to have less than 80 chars -->
+    <string name="app_short_description">Eine Telefon App mit Adressbuch, Wählpad und mehrfach-SIM Unterstützung</string>
+    <string name="app_long_description">
+        Eine App um Anrufe zu verwalten. Aus dem praktisches Anrufprotokoll können direkt Anrufe getätigt werden.
+
+        Das Wähltastenfeld bietet intelligente Kontaktvorschlägen. Es unterstützt auch Buchstaben.
+
+        Sie können Telefonnummern einfach blockieren, um unerwünschte eingehende Anrufe zu vermeiden.
+
+        Die unterstützte Kurzwahl macht das Anrufen Ihrer Lieblingskontakte mit dieser App zum Kinderspiel.
+
+        Um Ihnen zu helfen, Ihre Anrufe schnell zu verwalten, unterstützt die Telefon-App auch Favoriten und erstellt Verknüpfungen für jeden Kontakt auf dem Startbildschirm.
+
+        Weiter unterstützt die App standardmässig das Materialdesign und Dark-Theme und bietet eine hervorragende Benutzererfahrung für eine einfache Verwendung. Keine Internetverbindung nötig, dadurch mehr Privatsphäre, Sicherheit und Stabilität als andere Apps.
+
+        Enthält keine Werbungen und benötigt keine unnötigen Berechtigungen. Vollständig OpenSource und bietet anpassbare Farben.
+
+        <b>Schau dir die vollständige Serie der Schlichten Apps hier an:</b>
+        https://www.simplemobiletools.com
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

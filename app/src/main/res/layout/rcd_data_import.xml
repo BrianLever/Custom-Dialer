@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/rcd_data_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Brian Lever"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/rcd_data_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="+16789229089"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+        <ImageView
+            android:id="@+id/rcd_data_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:visibility="visible"
+            android:src="@mipmap/rcd_avatar"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rcd_data_social_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/rcd_data_linkedin"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:alpha="1.0"
+            android:gravity="start"
+            android:src="@mipmap/linkedin"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rcd_data_linkedin_switch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/rcd_data_linkedin"
+            android:checked="true" />
+
+        <ImageView
+            android:id="@+id/rcd_data_instagram"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@mipmap/instagram"
+            android:layout_toEndOf="@+id/rcd_data_linkedin_switch"
+            android:alpha="0.6"
+            android:visibility="visible"
+            android:gravity="end"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rcd_data_instagram_switch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/rcd_data_instagram"
+            android:checked="true" />
+
+        <ImageView
+            android:id="@+id/rcd_data_facebook"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@mipmap/facebook"
+            android:layout_toEndOf="@+id/rcd_data_instagram_switch"
+            android:alpha="1.0"
+            android:visibility="visible"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rcd_data_facebook_switch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_toEndOf="@+id/rcd_data_facebook"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:checked="true"/>
+
+        <ImageView
+            android:id="@+id/rcd_data_twitter"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/rcd_data_linkedin"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:alpha="1.0"
+            android:src="@mipmap/twitter"
+            android:visibility="visible" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rcd_data_twitter_switch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_toEndOf="@+id/rcd_data_twitter"
+            android:layout_below="@+id/rcd_data_linkedin"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:checked="true"/>
+        <ImageView
+            android:id="@+id/rcd_data_website"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@mipmap/webpageicon"
+            android:layout_below="@+id/rcd_data_linkedin"
+            android:layout_toEndOf="@+id/rcd_data_twitter_switch"
+            android:alpha="1.0"
+            android:visibility="visible"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rcd_data_website_switch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/rcd_data_linkedin"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/rcd_data_website"
+            android:checked="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rcd_data_edit_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.simplemobiletools.commons.views.MyEditText
+            android:id="@+id/rcd_data_editText"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rcd_data_rectangle"
+            android:hint="@string/hint"
+            android:inputType="textMultiLine|textShortMessage"
+            android:maxLines="3"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/rcd_data_enter"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:alpha="1.0"
+            android:src="@drawable/baseline_send_24"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/rcd_data_GIF"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/rcd_data_editText"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:alpha="0.8"
+            android:src="@drawable/baseline_gif_box_24"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/rcd_data_camera"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/rcd_data_editText"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/rcd_data_GIF"
+            android:alpha="0.8"
+            android:src="@drawable/baseline_photo_camera_24"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/rcd_data_photo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/rcd_data_editText"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/rcd_data_camera"
+            android:alpha="0.8"
+            android:src="@drawable/baseline_image_24"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/rcd_data_location"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/rcd_data_editText"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/rcd_data_photo"
+            android:alpha="0.8"
+            android:src="@drawable/baseline_location_on_24"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
+        <fragment
+            android:id="@+id/rcd_data_map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+</LinearLayout>
+
+

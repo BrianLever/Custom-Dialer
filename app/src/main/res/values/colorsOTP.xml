@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name ="OTPcolorPrimary">#536DFE</color>
+    <color name ="OTPcolorPrimaryDark">#536DFE</color>
+    <color name ="OTPcolorAccent">#F44330</color>
+    <color name ="OTPcolorPrimaryText">#212121</color>
+    <color name ="OTPcolorTextSecondary">#757575</color>
+    <color name ="OTPcolorDivider">#BDBDBD</color>
+    <color name ="colorWhite">#FFFFFF</color>
+</resources>

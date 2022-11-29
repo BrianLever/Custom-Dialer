@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/call_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/caller_avatar"
+                android:layout_width="@dimen/incoming_call_avatar_size"
+                android:layout_height="@dimen/incoming_call_avatar_size"
+                android:contentDescription="@string/accept"
+                android:alpha="1.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.047"
+                tools:src="@drawable/ic_call_accept" />
+
+            <com.simplemobiletools.commons.views.MyTextView
+                android:id="@+id/caller_name_label"
+                android:layout_width="289dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/caller_name_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/caller_avatar"
+                tools:text="Caller name" />
+
+            <com.simplemobiletools.commons.views.MyTextView
+                android:id="@+id/caller_number_label"
+                android:layout_width="285dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/call_status_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/caller_name_label"
+                tools:text="0912 345 678" />
+
+            <com.simplemobiletools.commons.views.MyTextView
+                android:id="@+id/call_status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:textSize="@dimen/call_status_text_size"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/caller_number_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"
+                tools:text="Is Calling" />
+            <ImageView
+                android:id="@+id/rcd_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintTop_toBottomOf="@+id/call_status_label"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"
+                android:visibility="visible"
+                android:alpha="1.0"
+                android:layout_margin="20dp"
+                tools:src="@drawable/images_avatar"/>
+            <com.simplemobiletools.commons.views.MyTextView
+                android:id="@+id/rcd_message_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:textSize="@dimen/call_status_text_size"
+                android:visibility="visible"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"
+                tools:text="Text Message :" />
+            <com.simplemobiletools.commons.views.MyTextView
+                android:id="@+id/rcd_message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:textSize="@dimen/call_status_text_size"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_image"
+                app:layout_constraintLeft_toRightOf="@+id/rcd_message_label"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"
+                tools:text="Break Time" />
+
+            <ImageView
+                android:id="@+id/rcd_linkedin"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/linkedin"
+                android:alpha="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_message_content"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"/>
+            <ImageView
+                android:id="@+id/rcd_instagram"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/instagram"
+                android:alpha="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_message_content"
+                app:layout_constraintLeft_toRightOf="@+id/rcd_linkedin"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"/>
+            <ImageView
+                android:id="@+id/rcd_facebook"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/facebook"
+                android:alpha="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_message_content"
+                app:layout_constraintLeft_toRightOf="@+id/rcd_instagram"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"/>
+            <ImageView
+                android:id="@+id/rcd_twitter"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/twitter"
+                android:alpha="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_message_content"
+                app:layout_constraintLeft_toRightOf="@+id/rcd_facebook"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"/>
+            <ImageView
+                android:id="@+id/rcd_website"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/webpageicon"
+                android:alpha="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/rcd_message_content"
+                app:layout_constraintLeft_toRightOf="@+id/rcd_twitter"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintVertical_bias="0.25"/>
+
+            <ImageView
+                android:id="@+id/call_sim_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:alpha="0.8"
+                android:visibility="gone"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_sim_vector"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/caller_number_label"
+                app:layout_constraintVertical_bias="0.25"
+                app:layout_constraintHorizontal_bias="0.35"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="251dp" />
+
+            <TextView
+                android:id="@+id/call_sim_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0.8"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/md_grey_black"
+                android:textSize="@dimen/bigger_text_size"
+                app:layout_constraintBottom_toBottomOf="@+id/call_sim_image"
+                app:layout_constraintEnd_toEndOf="@+id/call_sim_image"
+                app:layout_constraintStart_toStartOf="@+id/call_sim_image"
+                app:layout_constraintTop_toTopOf="@+id/call_sim_image"
+                tools:text="1" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/incoming_call_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="-4dp">
+                <LinearLayout
+                    android:id="@+id/incoming_arrow_holder_decline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/call_decline"
+                    app:layout_constraintStart_toStartOf="@+id/call_decline"
+                    app:layout_constraintEnd_toEndOf="@+id/call_decline"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow3_decline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_expand_less_36" />
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow2_decline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_expand_less_36" />
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow1_decline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_expand_less_36" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/call_decline"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/decline"
+                    android:src="@drawable/ic_call_decline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+
+                <com.simplemobiletools.commons.views.MyTextView
+                    android:id="@+id/call_decline_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="@string/decline"
+                    android:textSize="@dimen/bigger_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/call_decline"
+                    app:layout_constraintStart_toStartOf="@+id/call_decline"
+                    app:layout_constraintTop_toBottomOf="@+id/call_decline" />
+                <LinearLayout
+                    android:id="@+id/incoming_arrow_holder_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/call_accept"
+                    app:layout_constraintStart_toStartOf="@+id/call_accept"
+                    app:layout_constraintEnd_toEndOf="@+id/call_accept"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow3_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_expand_less_36" />
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow2_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_expand_less_36" />
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow1_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_expand_less_36" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/call_accept"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/accept"
+                    android:src="@drawable/ic_call_accept"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.85"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+
+                <com.simplemobiletools.commons.views.MyTextView
+                    android:id="@+id/call_accept_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="@string/accept"
+                    android:textSize="@dimen/bigger_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/call_accept"
+                    app:layout_constraintStart_toStartOf="@+id/call_accept"
+                    app:layout_constraintTop_toBottomOf="@+id/call_accept" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/declineMessage"
+                    android:src="@drawable/send_sms"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.95"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/declineMessageText"
+                    android:textColor="@color/md_grey_black_dark"
+                    android:text="Send message..."
+                    android:textSize="@dimen/_8sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.97"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/incoming_second_call_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="-4dp">
+
+                <ImageView
+                    android:id="@+id/accept_and_end_end"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/decline"
+                    android:src="@drawable/ic_call_decline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.09"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.79" />
+
+                <ImageView
+                    android:id="@+id/accept_and_end_accept"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/decline"
+                    android:src="@drawable/ic_call_accept"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+
+
+                <com.simplemobiletools.commons.views.MyTextView
+                    android:id="@+id/accept_and_end_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="End &amp; Accept"
+                    android:textSize="@dimen/bigger_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/accept_and_end_accept"
+                    app:layout_constraintStart_toStartOf="@+id/accept_and_end_accept"
+                    app:layout_constraintTop_toBottomOf="@+id/accept_and_end_accept" />
+
+                <ImageView
+                    android:id="@+id/call_decline_second"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/decline"
+                    android:src="@drawable/ic_call_decline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+
+                <com.simplemobiletools.commons.views.MyTextView
+                    android:id="@+id/call_decline_label_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="@string/decline"
+                    android:textSize="@dimen/bigger_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/call_decline_second"
+                    app:layout_constraintStart_toStartOf="@+id/call_decline_second"
+                    app:layout_constraintTop_toBottomOf="@+id/call_decline_second" />
+
+                <ImageView
+                    android:id="@+id/hold_and_accept_hold"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/accept"
+                    android:src="@drawable/call_hold_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.79"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.79" />
+
+                <ImageView
+                    android:id="@+id/hold_and_accept_accept"
+                    android:layout_width="@dimen/incoming_call_button_size"
+                    android:layout_height="@dimen/incoming_call_button_size"
+                    android:contentDescription="@string/decline"
+                    android:src="@drawable/ic_call_accept"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.85"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+
+                <com.simplemobiletools.commons.views.MyTextView
+                    android:id="@+id/hold_and_accept_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="Hold &amp; Accept"
+                    android:textSize="@dimen/bigger_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/hold_and_accept_accept"
+                    app:layout_constraintStart_toStartOf="@+id/hold_and_accept_accept"
+                    app:layout_constraintTop_toBottomOf="@+id/hold_and_accept_accept" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ongoing_call_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/call_toggle_microphone"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/ic_microphone_vector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.70" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mute"
+            android:textColor="@color/md_grey_black"
+            android:id="@+id/tholder1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74"/>
+
+
+        <ImageView
+            android:id="@+id/call_toggle_speaker"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/ic_speaker_on_vector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintVertical_bias="0.70" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mute"
+            android:id="@+id/tholder2"
+            android:textColor="@color/md_grey_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74"/>
+
+        <ImageView
+            android:id="@+id/call_dialpad"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/ic_dialpad_vector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.70" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mute"
+            android:id="@+id/tholder3"
+            android:textColor="@color/md_grey_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74"/>
+
+
+        <ImageView
+            android:id="@+id/add_call_button"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/add_call_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintVertical_bias="0.82"
+            app:tint="@color/colorTextIcons" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mute"
+            android:id="@+id/tholder4"
+            android:textColor="@color/md_grey_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85"/>
+
+        <ImageView
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:id="@+id/callHoldButton"
+            android:padding="@dimen/medium_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_call_hold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82"
+            app:tint="@color/colorTextIcons" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mute"
+            android:id="@+id/tholder5"
+            android:textColor="@color/md_grey_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:id="@+id/videocallbutton"
+            android:padding="@dimen/medium_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/video_call_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82"
+            app:tint="@color/colorTextIcons" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mute"
+            android:id="@+id/tholder6"
+            android:textColor="@color/md_grey_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85"/>
+
+
+        <ImageView
+            android:id="@+id/swap_call_button"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/call_swap_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintVertical_bias="0.82"
+            app:tint="@color/colorTextIcons" />
+
+        <ImageView
+            android:id="@+id/merge_call_button"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/call_merge_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintVertical_bias="0.82"
+            app:tint="@color/colorTextIcons" />
+
+        <ImageView
+            android:id="@+id/manage_conference"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/medium_margin"
+            android:src="@drawable/conference_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintVertical_bias="0.82"
+            app:tint="@color/colorTextIcons" />
+
+
+        <ImageView
+            android:id="@+id/call_end"
+            android:layout_width="@dimen/dialpad_button_size"
+            android:layout_height="@dimen/dialpad_button_size"
+            android:contentDescription="@string/decline"
+            android:src="@drawable/ic_call_decline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputContainer"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintStart_toStartOf="@id/call_holder"
+        app:layout_constraintEnd_toEndOf="@id/call_holder"
+        app:layout_constraintTop_toTopOf="@id/call_holder"
+        app:layout_constraintBottom_toBottomOf="@id/call_holder">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/md_grey_white"
+            android:id="@+id/outputHolder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:id="@+id/innerOutputContainer">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@color/md_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbarText"
+                    app:layout_constraintStart_toStartOf="@+id/toolbarHolder"
+                    app:layout_constraintTop_toTopOf="@+id/toolbarHolder"
+                    app:layout_constraintBottom_toBottomOf="@+id/toolbarHolder"
+                    android:text="Choose route"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/exitcallmanagement"
+                    android:id="@+id/exitoutputHolder"
+                    app:layout_constraintEnd_toEndOf="@id/toolbarHolder"
+                    app:layout_constraintTop_toTopOf="@id/toolbarHolder"
+                    app:layout_constraintLeft_toRightOf="@id/toolbarText"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/md_blue"
+                    android:id="@+id/bottomView"
+                    app:layout_constraintTop_toBottomOf="@id/toolbarHolder"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bluetooth"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintTop_toBottomOf="@id/bottomView"
+                        android:textColor="@color/md_grey_black"
+                        android:text="Bluetooth"/>
+
+
+                  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/speaker"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_17sdp"
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:layout_constraintTop_toBottomOf="@id/bluetooth"
+                    android:textColor="@color/md_grey_black"
+                    android:text="Speaker"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/headset"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:layout_constraintTop_toBottomOf="@id/speaker"
+                    android:textColor="@color/md_grey_black"
+                    android:text="Headset"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/md_blue"
+                    app:layout_constraintTop_toTopOf="@id/innerOutputContainer"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/md_blue"
+                    app:layout_constraintBottom_toBottomOf="@id/innerOutputContainer"/>
+
+
+                <View
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_blue"
+                    app:layout_constraintStart_toStartOf="@id/innerOutputContainer"/>
+
+                <View
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_blue"
+                    app:layout_constraintEnd_toEndOf="@id/innerOutputContainer"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customMessageCardView"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:background="@drawable/ripple_all_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorTextIcons">
+
+
+        <EditText
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/customMessageHolder"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Type your message..."
+            android:imeOptions="actionSend"
+            android:textColor="@color/md_grey_black_dark"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:tint="@color/colorTextIcons">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Cancel"
+             android:id="@+id/cancelSendMessage"
+             android:textColor="@color/amp_blue"
+             android:textSize="@dimen/_10sdp"
+             android:layout_marginStart="@dimen/_45sdp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:id="@+id/sendMessage"
+                android:textColor="@color/amp_blue"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_45sdp"/>
+
+          </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+        android:id="@+id/dialpad_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/dialpad_input_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.simplemobiletools.commons.views.MyEditText
+                android:id="@+id/dialpad_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dialpad_button_size"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_toStartOf="@+id/dialpad_close"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dialpad_text_size" />
+
+            <ImageView
+                android:id="@+id/dialpad_close"
+                android:layout_width="@dimen/normal_icon_size"
+                android:layout_height="@dimen/normal_icon_size"
+                android:layout_alignTop="@+id/dialpad_input"
+                android:layout_alignBottom="@+id/dialpad_input"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_margin"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/medium_margin"
+                android:src="@drawable/ic_cross_vector" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/dialpad_include"
+            layout="@layout/dialpad" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rejectWithSMS"
+        android:elevation="2dp"
+        android:alpha="1.0"
+        android:visibility="gone"
+        android:tint="@color/colorTextIcons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/rectangle_effect"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_top_corner"
+                style="@style/SettingsHolderTextViewOneLinerStyle">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/md_grey_black_dark"
+                android:text="@string/callyourightback"
+                android:id="@+id/callBack"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_background"
+                style="@style/SettingsHolderTextViewOneLinerStyle">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/callyoulater"
+                android:textColor="@color/md_grey_black_dark"
+                android:id="@+id/callLater"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_background"
+                style="@style/SettingsHolderTextViewOneLinerStyle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/md_grey_black_dark"
+                android:text="@string/canttalknow"
+                android:id="@+id/cantTalkNow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_background"
+                style="@style/SettingsHolderTextViewOneLinerStyle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/md_grey_black_dark"
+                android:text="@string/custom"
+                android:id="@+id/customMessage"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_350sdp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/container">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryText"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
